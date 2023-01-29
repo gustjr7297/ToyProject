@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 300vw;
+        }
+        .inner{
+            width: 100vw;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="div1">
+        <div class="inner"><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAzMjhfMjkx%2FMDAxNjQ4NDcyNzA5MTYy._ELFilEDC9DXUtLAFkKw3Rruef0nF33E-AlMoxgfESwg.0cPH_1rSxDZcAgVGzEHE6WKRR93e_PpQuK3QzJAFaUAg.PNG.yeunjong2006%2F%25BD%25BA%25C5%25A9%25B8%25B0%25BC%25A6_2022-03-28_%25BF%25C0%25C8%25C4_10.04.43.png&type=a340"></div>
+        <div class="inner"><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA0MjFfNTYg%2FMDAxNTg3NDMyMzQ4MjY4.VE68Ox9oAwzMhDOpukz3zIeu0Zo-mmPtVwD-JzhhN2wg.YfRD4Kp9YRlJTU_RRIBBdFzbMYzT3S4KBd6dtT1hF8Ug.JPEG.nyangtube%2F%25C0%25AF%25C6%25A9%25BA%25EA_%25B0%25CB%25BB%25F6%25B1%25E2%25B7%25CF_%25BB%25E8%25C1%25A6_%25C0%25CC%25B7%25B8%25B0%25D4_%25BD%25C3%25C3%25BB%25B1%25E2%25B7%25CF%25B1%25EE%25C1%25F6_%25C1%25F6%25BF%25EC%25B1%25E22.jpg&type=a340"></div>
+        <div class="inner"><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMjNfNDAg%2FMDAxNjY5MTc4ODUxMjQy._xTs9GApOaKl9yagPDz9GFQ7SlnUMRJruffQCGNK7xAg.4K-fiktdNk7igcxaFoOdo1Ov8sNys75zvJRidpnDPxog.PNG.acoi54%2F20221123_134719.png&type=a340"></div>
+        </div>
+    </div>
+
+    <button class="버튼1">버튼1</button>
+    <button class="버튼2">버튼2</button>
+    <button class="버튼3">버튼3</button>
+
+    <script>
+        document.querySelector('.버튼2').addEventListener('click', function(){
+            document.querySelector('.div1').style.transform = 'translate(-100vw)';
+        });
+        document.querySelector('.버튼3').addEventListener('click', function(){
+            document.querySelector('.div1').style.transform = 'translate(-200vw)';
+        });
+        document.querySelector('.버튼1').addEventListener('click', function(){
+            document.querySelector('.div1').style.transform = 'translate(-0vw)';
+        });
+    </script>
+</body>
+</html>
